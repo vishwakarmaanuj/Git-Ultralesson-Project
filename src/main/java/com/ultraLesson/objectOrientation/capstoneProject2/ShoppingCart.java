@@ -28,7 +28,7 @@ public class ShoppingCart {
     }
 
     public void Ewallet() {
-        System.out.println("paid by e-wallet");
+        System.out.println("paid by e-wallets");
     }
 
     public void show() {
