@@ -13,6 +13,7 @@ public class Grocery {
         shoppingCart.addItem(newspaper);
         shoppingCart.show();
         System.out.println("The total price of selected items in cart are : "+shoppingCart.calculateTotalPrice());
-        shoppingCart.Ewallet();
+        shoppingCart.purchase();
+        //shoppingCart.Ewallet();
     }
 }
