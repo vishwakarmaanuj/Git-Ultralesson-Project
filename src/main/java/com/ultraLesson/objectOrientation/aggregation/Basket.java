@@ -1,2 +1,5 @@
-package com.ultraLesson.objectOrientation.aggregation;public class Basket {
+package com.ultraLesson.objectOrientation.aggregation;
+
+public class Basket {
+
 }

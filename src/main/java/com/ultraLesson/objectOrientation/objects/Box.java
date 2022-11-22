@@ -1,9 +1,10 @@
-package com.ultraLesson.objectOrientation;
+package com.ultraLesson.objectOrientation.objects;
 
 public class Box {
-    int length,width,capacity;
-    String shape;
-
-    public static void main(String[] args){}
-
+  private String shape;
+  private String color;
+  private int length;
+  private int width;
+  private int size;
+  private int height;
 }

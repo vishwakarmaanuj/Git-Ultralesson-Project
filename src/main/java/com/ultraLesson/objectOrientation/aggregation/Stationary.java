@@ -1,2 +1,3 @@
-package com.ultraLesson.objectOrientation.aggregation;public class Stationary {
-}
+package com.ultraLesson.objectOrientation.aggregation;
+
+public abstract class Stationary {}
