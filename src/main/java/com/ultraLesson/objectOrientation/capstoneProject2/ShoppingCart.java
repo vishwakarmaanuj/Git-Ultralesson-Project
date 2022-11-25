@@ -30,7 +30,7 @@ public class ShoppingCart {
 public void purchase(){
     System.out.println("The total price of items are : "+price);
     Scanner sc=new Scanner(System.in);
-    System.out.println("Do you want to purchages the items");
+    System.out.println("Do you want to purchases the items");
     String string= sc.nextLine();
     switch (string) {
         case "yes":
