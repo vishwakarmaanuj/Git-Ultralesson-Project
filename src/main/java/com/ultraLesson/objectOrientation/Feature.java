@@ -1,2 +1,4 @@
-package com.ultraLesson.objectOrientation;public class Feature {
+package com.ultraLesson.objectOrientation;
+
+public class Feature {
 }
