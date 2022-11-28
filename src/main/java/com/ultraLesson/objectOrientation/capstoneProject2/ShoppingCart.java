@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ShoppingCart {
-    private ArrayList<Item> cart = new ArrayList<>();
+    private ArrayList<Item> cart;
     private double price;
 
     public ShoppingCart() {
@@ -51,5 +51,13 @@ public void purchase(){
         for (int i = 0; i < cart.size(); i++) {
             System.out.println(cart.get(i));
         }
+
+    }
+    public void buyOneGetOne(){
+       for(Item item: cart){
+           if(item.getName().contentEquals("milk") && item.getQuantity()>1){
+               System.out.println("Buy one get one free for : "+item);
+           }
+       }
     }
 }
