@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class FruitBowl {
+public class SmallFruitBowl {
     private List<Fruit> fruitList = new ArrayList<>();
 
     public void addFruit(Fruit... fruit) {
@@ -14,13 +14,19 @@ public class FruitBowl {
     public void addFruit(Fruit fruit) {
         this.fruitList.add(fruit);
 
+  }
+    public List<Fruit> getFruits() {
+        return fruitList;
     }
-    public void addFruits(Fruit apple,Fruit orange,Fruit cherry){
 
+    @Override
+    public String toString() {
+        return "SmallFruitBowl{" +
+                "fruitList=" + fruitList +
+                '}';
     }
-    public void show3() {
-        for (int i = 0; i < fruitList.size(); i++) {
-            System.out.print(fruitList.get(i));
-        }
-    }
+//    public void addFruits(Fruit apple,Fruit orange,Fruit cherry){
+//
+//    }
+
 }
