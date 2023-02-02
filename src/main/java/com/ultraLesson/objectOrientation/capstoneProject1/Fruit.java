@@ -51,13 +51,13 @@ public class Fruit {
         return 0;
     }
 
-//    @Override
-//    public String toString() {
-//        return "FruitBowlLayer{" +
-//                "name='" + name + '\'' +
-//                ", taste='" + taste + '\'' +
-//                ", color='" + color + '\'' +
-//                ", quantity=" + quantity +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "FruitBowlLayer{" +
+                "name='" + name + '\'' +
+                ", taste='" + taste + '\'' +
+                ", color='" + color + '\'' +
+                ", quantity=" + quantity +
+                '}';
+    }
 }

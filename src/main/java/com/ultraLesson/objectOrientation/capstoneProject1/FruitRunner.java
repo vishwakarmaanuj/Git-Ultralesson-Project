@@ -6,12 +6,15 @@ import java.util.List;
 public class FruitRunner {
     public static void main(String[] args) {
         List<Fruit> fruits = new ArrayList<>();
-        Fruit apple = new Fruit("apple", "sweet", "red", 5.2);
-        Fruit cherry = new Fruit("cherry", "bitter", "green", 2);
-        Fruit orange = new Fruit("orange", "sour", "orange", 2);
-        SmallFruitBowl bowl = new SmallFruitBowl(fruits);
+        fruits.add(new Fruit("apple", "sweet", "red", 5.2));
+        fruits.add(new Fruit("cherry", "bitter", "green", 2));
+        fruits.add(new Fruit("orange", "sour", "orange", 2));
+        fruits.add(new Fruit("grapes","sweet","red",3));
+        fruits.add(new Fruit("Violet Grapes","sweet","voilet",3));
+        FruitBowl bowl = new FruitBowl(fruits);
         MultiLayerFruitBowl layerBowl = new MultiLayerFruitBowl();
         Segregator segregator = new Segregator(bowl, layerBowl);
         segregator.segregateByColor();
+
     }
 }
