@@ -39,9 +39,4 @@ public class Segregator {
         segregatedBowl.printThirdLayer(fruitsThirdLayer);
     }
 
-//    private void clearFruitsList() {
-//        fruitsFirstLayer.clear();
-//        fruitsSecondLayer.clear();
-//        fruitsThirdLayer.clear();
-//    }
 }
