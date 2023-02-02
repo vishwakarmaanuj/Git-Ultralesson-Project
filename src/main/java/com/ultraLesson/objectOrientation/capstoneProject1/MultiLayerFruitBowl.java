@@ -2,30 +2,28 @@ package com.ultraLesson.objectOrientation.capstoneProject1;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.IntStream;
 
 public class MultiLayerFruitBowl {
-    private List<SmallFruitBowl>bowls;
-    private int noOfLayers;
-    public MultiLayerFruitBowl(int noOfLayers,int bowlValue){
-        this.noOfLayers=noOfLayers;
-        this.bowls=new ArrayList<>();
-       // FruitBowl(noOfLayers);
+    private final List<SmallFruitBowl>  bowls = new ArrayList<>();
+    //private int noOfLayers;
+    public MultiLayerFruitBowl() {
+        this(3);
     }
-    public void add(SmallFruitBowl bowl, Fruit fruit) {
-        bowl.addFruit(fruit);
-    }
-    @Override
-    public String toString() {
-        return "{"
-                + "\"bowls\":" + bowls
-                + "}";
+    public MultiLayerFruitBowl(int levels) {
+        IntStream.range(0, levels)
+                .forEach(level -> bowls.add(new SmallFruitBowl()));
     }
 
-    public Optional<SmallFruitBowl> getOptionalBowl(FruitPredicate<Fruit> fruitPredicate) {
-        return bowls.stream().filter(bowl -> bowl
-                .getFruits()
-                .stream()
-                .allMatch(fruitPredicate)).findFirst();
+    public void printFirstLayer(List<String> firstLayer){
+        System.out.println( firstLayer);
+    }
+
+    public void printSecondLayer(List<String> secondLayer){
+        System.out.println(secondLayer);
+    }
+
+    public void printThirdLayer(List<String> thirdLayer){
+        System.out.println(thirdLayer);
     }
 }

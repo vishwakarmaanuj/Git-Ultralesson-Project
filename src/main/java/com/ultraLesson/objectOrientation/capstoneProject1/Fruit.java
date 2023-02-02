@@ -1,5 +1,7 @@
 package com.ultraLesson.objectOrientation.capstoneProject1;
 
+import java.util.List;
+
 public class Fruit {
     private String name;
     private String taste;
@@ -45,13 +47,17 @@ public class Fruit {
         this.quantity = quantity;
     }
 
-    @Override
-    public String toString() {
-        return "FruitBowlLayer{" +
-                "name='" + name + '\'' +
-                ", taste='" + taste + '\'' +
-                ", color='" + color + '\'' +
-                ", quantity=" + quantity +
-                '}';
+    public int getType() {
+        return 0;
     }
+
+//    @Override
+//    public String toString() {
+//        return "FruitBowlLayer{" +
+//                "name='" + name + '\'' +
+//                ", taste='" + taste + '\'' +
+//                ", color='" + color + '\'' +
+//                ", quantity=" + quantity +
+//                '}';
+//    }
 }

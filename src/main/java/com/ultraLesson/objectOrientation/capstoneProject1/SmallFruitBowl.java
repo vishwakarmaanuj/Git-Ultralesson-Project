@@ -5,28 +5,47 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SmallFruitBowl {
+    private String fruit;
+    private String color;
+    private String type;
+    private String size;
     private List<Fruit> fruitList = new ArrayList<>();
 
-    public void addFruit(Fruit... fruit) {
-        this.fruitList.addAll(Arrays.asList(fruit));
-
+    public SmallFruitBowl() {
+        this.fruitList = new ArrayList<>();
     }
-    public void addFruit(Fruit fruit) {
-        this.fruitList.add(fruit);
 
-  }
-    public List<Fruit> getFruits() {
+    public SmallFruitBowl(List<Fruit> fruits) {
+        this.fruitList = fruits;
+    }
+
+    public SmallFruitBowl(Fruit fruit) {
+        fruitList.add(fruit);
+    }
+
+
+    public void add(Fruit fruit) {
+        fruitList.add(fruit);
+    }
+
+
+    public void remove(Fruit fruit) {
+        fruitList.remove(fruit);
+    }
+
+    public List<Fruit> returnFruits() {
         return fruitList;
     }
 
+
     @Override
-    public String toString() {
-        return "SmallFruitBowl{" +
-                "fruitList=" + fruitList +
-                '}';
-    }
-//    public void addFruits(Fruit apple,Fruit orange,Fruit cherry){
-//
-//    }
+public String toString(){
+     return "FruitBowlLayer{" +
+             "fruit='" + fruit + '\'' +
+            ", color='" + color + '\'' +
+            ", type='" + type + '\'' +
+            ", size='" + size + '\'' +
+            '}';
+}
 
 }
