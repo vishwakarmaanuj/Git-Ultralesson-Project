@@ -55,4 +55,7 @@ public class ShoppingCart {
             walletAmount.isDiscountApplicable(total);
         }
     }
+    //create addItem(ItemName and quantity)
+    //getItem() should return list of product
+    //
 }

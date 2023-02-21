@@ -9,7 +9,7 @@ public class Runner {
             productList.add(new ProductType("milk", 25));
             productList.add(new ProductType("news Paper", 5));
 
-            ShoppingCart cartProduct = new ShoppingCart(productList);
+            ShoppingCart cartProduct = new ShoppingCart(productList);//need to remove
 
             System.out.println("Enter the choice of product you wish to buy: apple / milk / paper");
 
